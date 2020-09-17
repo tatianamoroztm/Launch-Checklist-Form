@@ -43,6 +43,7 @@ window.addEventListener("load", function() {
          document.getElementById("launchStatus").style.color = "red";
       }
       if (fuelLevelInput.value>= 10000 && cargoMassInput.value<=10000){
+         document.getElementById("faultyItems").style.visibility = "visible";
          document.getElementById("launchStatus").innerHTML = "Shuttle is ready for launch"; 
          document.getElementById("launchStatus").style.color = "green"; 
          let index = Math.floor(Math.random()*6);
